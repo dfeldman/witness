@@ -1,0 +1,33 @@
+{
+    "expires": "2022-12-17T23:57:40-05:00",
+    "steps": {
+      "clone": {
+        "name": "build",
+        "attestations": [
+          {
+            "type": "https://witness.testifysec.com/attestations/Artifact/v0.1",
+            "policies": []
+          },
+          {
+            "type": "https://witness.testifysec.com/attestations/CommandRun/v0.1",
+            "policies": []
+          }
+        ],
+        "functionaries": [
+          {
+            "certConstraint": {
+              "roots": [
+                "f64ecf571b90fa541ff1f914cf78ce245986aaa266261055a1df118bf86ef056"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "roots": {
+      "f64ecf571b90fa541ff1f914cf78ce245986aaa266261055a1df118bf86ef056": {
+        "certificate": "LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUNvd0JRWURLMlZ3QXlFQWFOcUhHSldBY0hZWElBMnNyZHRnajh2QUZNZ0xyVzFoT3JudlVqMzJNRlk9Ci0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQo="
+      }
+    }
+  }
+  
