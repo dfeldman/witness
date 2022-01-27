@@ -14,5 +14,7 @@
 
 #!/bin/sh
 
-
-rm out.tar || true && KO_DOCKER_REPO=null witness run -c test.yaml -a oci --trace=false -- ko publish --push=false --tarball out.tar .
+rm -f witness-test-oci.tar
+make -C ../ build
+../bin/witness run -c test.yaml -a oci --trace=false -- \
+  /bin/bash -c "docker build -t witness-test-oci  . && docker save witness-test-oci > witness-test-oci.tar"
